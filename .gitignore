@@ -1,0 +1,25 @@
+# build output
+dist/
+.output/
+
+# generated types
+.astro/
+
+# link validator output
+.starlight-links-validator/
+
+# dependencies
+node_modules/
+
+# unfinished generic articles — never published, never committed
+drafts/
+
+# logs and env
+*.log
+.env
+.env.production
+.DS_Store
+
+# editor
+.vscode/*
+!.vscode/extensions.json

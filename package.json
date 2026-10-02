@@ -1,0 +1,28 @@
+{
+  "name": "it-support-field-guide",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "A free, static, searchable IT support troubleshooting field guide built with Astro + Starlight.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "spellcheck": "cspell \"src/content/docs/**/*.{md,mdx}\" \"README.md\""
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.5",
+    "astro": "^7.3.5",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "cspell": "^8.17.1",
+    "starlight-links-validator": "^0.26.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "sharp@0.35.5": true,
+    "sharp@0.33.5": true
+  }
+}

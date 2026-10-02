@@ -1,0 +1,42 @@
+---
+title: IT Support Field Guide
+description: Short, scannable IT troubleshooting articles, cheat sheets, and helpdesk basics. Find any fix in under 30 seconds.
+template: splash
+hero:
+  tagline: Find any fix in under 30 seconds, from a laptop or a phone.
+  actions:
+    - text: Start here
+      link: /ITsupportGuide/start-here/helpdesk-basics/
+      icon: right-arrow
+      variant: primary
+    - text: Browse the fixes
+      link: /ITsupportGuide/accounts/account-locked-out/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+Press **Ctrl + K** or **/** to search. Steps first, background last.
+
+## Three ways in
+
+<CardGrid>
+  <Card title="Start here" icon="open-book">
+    Helpdesk basics, the troubleshooting method, and how to talk to users.
+    No assumed knowledge.
+
+    [Go to Start here](/ITsupportGuide/start-here/helpdesk-basics/)
+  </Card>
+  <Card title="Fix it" icon="setting">
+    Troubleshooting by area: accounts, Windows, macOS, networking,
+    Microsoft 365, and hardware.
+
+    [Go to Accounts and access](/ITsupportGuide/accounts/account-locked-out/)
+  </Card>
+  <Card title="Look it up" icon="magnifier">
+    Security basics, cheat sheets, and a glossary of terms and acronyms.
+
+    [Go to the Glossary](/ITsupportGuide/reference/glossary/it-terms-a-to-z/)
+  </Card>
+</CardGrid>
