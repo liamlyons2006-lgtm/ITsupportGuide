@@ -3,6 +3,9 @@
   "type": "module",
   "version": "0.1.0",
   "description": "A free, static, searchable IT support troubleshooting field guide built with Astro + Starlight.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

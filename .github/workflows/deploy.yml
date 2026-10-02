@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
@@ -36,8 +36,12 @@ jobs:
 
       # The Astro build also runs the Starlight link validator and generates
       # the Pagefind search index. A broken internal link fails the build here.
+      # node-version must be >= 22.12 for Astro 7; the action builds with its
+      # own Node runtime, so set it explicitly here too.
       - name: Build site (link check + Pagefind search index)
         uses: withastro/action@v3
+        with:
+          node-version: 22
 
   deploy:
     needs: build
